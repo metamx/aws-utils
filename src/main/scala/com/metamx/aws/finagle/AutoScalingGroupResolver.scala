@@ -1,4 +1,4 @@
-package com.metamx.common.scala.net.finagle
+package com.metamx.aws.finagle
 
 import java.net.{InetSocketAddress, SocketAddress}
 import java.util.concurrent.TimeUnit._

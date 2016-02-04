@@ -22,7 +22,7 @@ name := "aws-utils"
 
 scalaVersion := "2.11.7"
 
-crossScalaVersions := Seq("2.10.5", "2.11.7")
+crossScalaVersions := Seq("2.10.6", "2.11.7")
 
 lazy val root = project.in(file("."))
 
@@ -53,7 +53,6 @@ releaseSettings
 
 ReleaseKeys.publishArtifactsAction := PgpKeys.publishSigned.value
 
-val scalaUtilVersion = "1.11.9"
 val awsVersion = "1.10.12"
 
 libraryDependencies ++= Seq(
@@ -61,7 +60,7 @@ libraryDependencies ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.metamx" %% "scala-util" % scalaUtilVersion force()
+  "com.metamx" %% "scala-util" % "1.11.9" force()
 )
 
 libraryDependencies ++= Seq(
